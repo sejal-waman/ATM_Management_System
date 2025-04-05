@@ -42,12 +42,12 @@ Clone the repository to your local machine:
 git clone https://github.com/your-username/atm-management-system.git
 cd atm-management-system
 
-2. Database Setup
+### 2. Database Setup
 Create a MySQL database (e.g., atm_system).
 
 Configure the application.properties file to include your MySQL database credentials:
 
-properties:-
+### properties:-
 spring.datasource.url=jdbc:mysql://localhost:3306/atm_system
 spring.datasource.username=your-username
 spring.datasource.password=your-password
@@ -55,10 +55,10 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
-3. Configure Email
+### 3. Configure Email
 Set up the email configuration in your application.properties file to enable email notifications.
 
-properties:-
+### properties:-
 spring.mail.host=smtp.your-email-provider.com
 spring.mail.port=587
 spring.mail.username=your-email@example.com
@@ -66,21 +66,22 @@ spring.mail.password=your-email-password
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 
-4. Run the Application
+### 4. Run the Application
 You can run the application by using the following command:
 mvn spring-boot:run
 Alternatively, you can run the project directly from your IDE.
 
-5. Access the Application
+### 5. Access the Application
 Once the application is running, open your browser and go to:
 
 http://localhost:8080
+
 You will be presented with the login screen where you can enter your credentials to access the system.
 
 
 
 
-*Role-Based Dashboards*
+### *Role-Based Dashboards*
 Admin: Can manage users, view transaction history, and monitor system status.
 
 User: Can manage their own account, perform transactions, and view their transaction history.
