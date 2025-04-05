@@ -77,31 +77,6 @@ Once the application is running, open your browser and go to:
 http://localhost:8080
 You will be presented with the login screen where you can enter your credentials to access the system.
 
-Project Structure
-bash
-Copy
-Edit
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   ├── com
-│   │   │   │   ├── atm
-│   │   │   │   │   ├── controller      # Controllers for different functionalities
-│   │   │   │   │   ├── service         # Service layer for business logic
-│   │   │   │   │   ├── model           # Entity models (e.g., User, Transaction)
-│   │   │   │   │   ├── repository      # Data access layer using Spring Data JPA
-│   │   │   │   │   └── util            # Utility classes (e.g., email sender)
-│   │   ├── resources
-│   │   │   ├── application.properties  # Database and email configurations
-│   │   │   ├── static                  # CSS, JavaScript, and images
-│   │   │   ├── templates               # JSP pages (views)
-│   └── test
-│       └── java
-│           └── com
-│               └── atm
-│                   └── controller      # Unit tests for controllers
-│                   └── service         # Unit tests for services
-└── pom.xml
 
 
 
