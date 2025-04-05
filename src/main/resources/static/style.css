@@ -1,0 +1,246 @@
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Body Styling === */
+body {
+  background: linear-gradient(145deg, #1e293b, #334155); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* === Container Styling === */
+.container {
+  background-color: rgba(30, 41, 59, 0.95); /* Slight transparency */
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* === Header Styling === */
+h2 {
+  color: #38bdf8; /* Light Blue */
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* === Form Styling === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Input Field Styling */
+input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #475569; /* Dark Gray */
+  color: white;
+}
+
+input::placeholder {
+  color: #cbd5e1;
+}
+
+input:focus {
+  outline: 2px solid #38bdf8;
+}
+
+/* Button Styling */
+button {
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0284c7; /* Darker Blue */
+}
+
+/* === Link Section Styling === */
+p {
+  margin-top: 20px;
+}
+
+a {
+  color: #f87171; /* Light Coral */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dc2626; /* Darker Coral */
+}
+
+/* === Dashboard Page Styling === */
+.dashboard-container {
+  background-color: rgba(30, 41, 59, 0.95); /* Transparent Dark Background */
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* === Dashboard Form Styling (Updated as per Login Form) === */
+.dashboard-container form {
+  background-color: rgba(30, 41, 59, 0.95); /* Matching Login Form Background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  color: white;
+}
+
+/* Dashboard Form Header */
+.dashboard-container h2 {
+  color: #38bdf8; /* Light Blue */
+}
+
+/* Input Fields */
+.dashboard-container input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #475569; /* Dark Gray */
+  color: white;
+}
+
+.dashboard-container input::placeholder {
+  color: #cbd5e1;
+}
+
+.dashboard-container input:focus {
+  outline: 2px solid #38bdf8;
+}
+
+/* Form Buttons */
+.dashboard-container button {
+  background-color: #38bdf8; /* Light Blue */
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard-container button:hover {
+  background-color: #0284c7; /* Darker Blue */
+}
+
+/* Options Section */
+.options button {
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  padding: 14px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #0284c7;
+}
+
+/* === Logout Button Styling === */
+button.logout {
+  background-color: #ef4444;
+}
+
+button.logout:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 500px) {
+  .container, .dashboard-container {
+    padding: 20px;
+  }
+  
+  input, button {
+    font-size: 14px;
+  }
+}
+
+/* === Chatbot Section === */
+.chatbot-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.chatbot-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.chatbot-box {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 300px;
+  background-color: rgb(38, 0, 77);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.chatbot-box input, 
+.chatbot-box button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.chatbot-box button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.chatbot-box button:hover {
+  background-color: #0056b3;
+}
